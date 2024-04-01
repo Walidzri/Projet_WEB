@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Page d'Authentification</title>
+</head>
+<body>
+
+    <header>
+        <img src="C:\Users\amine\Pictures\Screenshots\logo_projet.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Entreprise</a></li>
+                <li><a href="#">Offres</a></li>
+                <li><a href="#">À propos de nous</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </nav>
+        <button class="account-button">&#128100;</button>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <form id="loginForm">
+                <input type="text" id="username" name="username" required placeholder="Identifiant">
+                <div class="error-message" id="emailError"></div> <!-- Nouvelle div pour le message d'erreur -->
+
+                <input type="password" id="password" name="password" required placeholder="Mot de passe">
+
+                <input type="submit" value="Se connecter">
+            </form>
+
+            <div class="forgot-password">
+                <a href="#">Mot de passe oublié ?</a>
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Me garder connecté</label>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        /* Ajout de styles CSS pour positionner le message d'erreur */
+        .error-message {
+            color: red;
+            margin-top: -25px;
+        }
+    </style>
+
+    <script>
+        document.getElementById('username').addEventListener('input', function () {
+            var usernameInput = this.value;
+            var emailError = document.getElementById('emailError');
+
+            if (!isValidEmail(usernameInput)) {
+                emailError.textContent = "Veuillez entrer une adresse e-mail valide.";
+            } else {
+                emailError.textContent = ""; // Efface le message d'erreur s'il est valide
+            }
+        });
+
+        function isValidEmail(email) {
+            // Utilisation d'une expression régulière simple pour vérifier si c'est un email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+
+</body>
+</html>
+
