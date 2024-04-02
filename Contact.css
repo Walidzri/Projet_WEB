@@ -1,0 +1,143 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color: white;
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+.nous {
+    width: 100vw; /* Utilise 100% de la largeur de la fenêtre */
+    display: block; /* Évite les espaces vides autour de l'image */
+}
+
+
+.aligne {
+    display: flex;
+    align-items: center; /* Alignement vertical */
+	margin-left: 40px;
+	justify-content: center ; 
+}
+		
+.aligne img {
+    margin-right: 30px; /* Espacement entre l'image et le texte */
+}
+
+p{
+	margin-left: 30px;
+	font-size: 25px;
+	color: black;
+	justify-content: center;
+}
+
+h1{
+	font-family: calibri;
+	text-align: center;
+}
+
+.navbar {
+    background-color: white; 
+    text-align: center; 
+	font-size: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: -10px;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    padding: 30px 25px;
+    text-decoration: none;
+    color: black;
+}	
+
+.navbar ul li a:hover {
+    background-color: grey; 
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.logoprj {
+	width: 100px;
+	height: auto;
+	margin-top: -15%;
+	margin-bottom: 1%;
+}
+
+.connexion{
+	width: 50px;
+	height: auto;
+	margin-top: -12%;
+	margin-left: 95%;
+	margin-bottom: 1.3%;
+}
+
+.site-footer {​​​​​​
+    background-color: #0000003a;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}​​​​​​
+
+.footer-container {​​​​​​
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0 20px;
+}​​​​​​
+
+.footer-section {​​​​​​
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}​​​​​​
+.footer-section h3 {​​​​​​
+    margin-bottom: 20px;
+}​​​​​​
+.footer-section p, .footer-section ul {​​​​​​
+    margin-left: 20px;
+}​​​​​​
+
+.footer-section ul {​​​​​​
+    list-style: none;
+    padding: 0;
+}​​​​​​
+
+.footer-section li {​​​​​​
+    margin-bottom: 10px;
+}​​​​​​
+
+.footer-section a {​​​​​​
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}​​​​​​
+
+.footer-section a:hover {​​​​​​
+    color: #bdc3c7;
+}​​​​​​
+
+label{
+	border : 2px solid black;
+	font-size: 30px;
+	
+}
